@@ -950,10 +950,14 @@ body {
 }
 
 .social-icons ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 2;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-icons ul li {
@@ -971,11 +975,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.social-icons ul li a:hover {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
 }
 
 .social-icons ul li a:hover {
